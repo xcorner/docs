@@ -27,7 +27,7 @@
 | Transaction.GetReferences    | 0.2           |
 | Account.SetVotes             | 1             |
 | Validator.Register           | 1000          |
-| Asset.Create（系统资产）       | 5000          |
+| Asset.Create（系统资产）       | 4999         |
 | Asset.Renew（系统资产）        | 5000          |
 | Contract.Create              | 500           |
 | Contract.Migrate             | 500           |
