@@ -1,0 +1,63 @@
+# getapplicationlog 方法
+
+根据指定的散列值，返回对应的nep5交易信息。
+
+## 参数说明
+
+hash：交易id。
+
+
+
+## 调用示例
+
+请求正文：
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "getapplicationlog",
+  "params": ["0xef8957a7bbf83822704f79d63c5f36f3c2b006d928ce978c1d97c23551deb7c8"],
+  "id": 1
+}
+```
+
+响应正文：
+
+```json
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+        "txid": "0xef8957a7bbf83822704f79d63c5f36f3c2b006d928ce978c1d97c23551deb7c8",
+        "vmstate": "HALT, BREAK",
+        "gas_consumed": "1.884",
+        "stack": [],
+        "notifications": [
+            {
+                "contract": "0xecc6b20d3ccac1ee9ef109af5a7cdb85706b1df9",
+                "state": {
+                    "type": "Array",
+                    "value": [
+                        {
+                            "type": "ByteArray",
+                            "value": "7472616e73666572"
+                        },
+                        {
+                            "type": "ByteArray",
+                            "value": "9393ee15ce6612484ab5be3bbc78c82af8dc0e07"
+                        },
+                        {
+                            "type": "ByteArray",
+                            "value": "2b41aea9d405fef2e809e3c8085221ce944527a7"
+                        },
+                        {
+                            "type": "ByteArray",
+                            "value": "00c2eb0b"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+```
