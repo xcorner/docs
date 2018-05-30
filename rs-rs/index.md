@@ -1,6 +1,6 @@
 # NEO White Paper
 
-A distributed network for the Smart Economy
+A distributed network for the Smart Economy231
 
 ## NEO design goals: Smart Economy
 
